@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -53,9 +52,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-=======
-# frozen_string_literal: true
-source "https://rubygems.org"
-
-gem "rails"
->>>>>>> 760f96fc66a9af30936aa45ebe27fa3d55120e1e
