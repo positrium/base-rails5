@@ -1,24 +1,29 @@
-# README
+# rails5
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+特にオプションを付けずにフルインストールする
 
-Things you may want to cover:
+```
+$ rails new . -f
+```
 
-* Ruby version
+# scaffold full
 
-* System dependencies
+## simple
 
-* Configuration
+```
+$ rails generate scaffold AdminUser name:string mail:string
+```
 
-* Database creation
+```
+$ rails routes
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+         Prefix Verb   URI Pattern                     Controller#Action
+    admin_users GET    /admin_users(.:format)          admin_users#index
+                POST   /admin_users(.:format)          admin_users#create
+ new_admin_user GET    /admin_users/new(.:format)      admin_users#new
+edit_admin_user GET    /admin_users/:id/edit(.:format) admin_users#edit
+     admin_user GET    /admin_users/:id(.:format)      admin_users#show
+                PATCH  /admin_users/:id(.:format)      admin_users#update
+                PUT    /admin_users/:id(.:format)      admin_users#update
+                DELETE /admin_users/:id(.:format)      admin_users#destroy
+```
